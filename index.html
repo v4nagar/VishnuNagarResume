@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Vishnu Nagar's Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        .logos {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .fa {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+            margin: 15px;
+            border-radius: 50%;
+            color: #fff;
+            background-color: #007bff;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .fa:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        /* Main Slide Styles */
+        .main-slide {
+            min-height: 80vh;
+            background: linear-gradient(45deg, #4890c0, #e52e71, #00aaff);
+            color: #fff;
+            padding: 20px;
+        }
+
+        .main-slide h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .main-slide h2 {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        .profileimage {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .profileimagemini {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            width: 100%;
+        }
+
+        /* About Section Styles */
+        .about {
+            padding: 40px 20px;
+        }
+
+        .aboutimage img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        .abouttext p {
+            font-size: 18px;
+        }
+
+        /* Skills Section Styles */
+        .skills {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .skills h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .skill-item {
+            text-align: left;
+            margin: 15px;
+        }
+
+        .skill-name {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .stars {
+            color: #ffc107;
+            font-size: 20px;
+        }
+
+        /* Projects Section Styles */
+        .projects {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .projects h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .project-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .project-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .project-item p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .project-item ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .project-item ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Certificates Section Styles */
+        .certificates {
+            background-color: #f0f0f0;
+            padding: 40px 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .certificates h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #28a745;
+        }
+
+        .certificate-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .certificate-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: calc(33.33% - 20px);
+            text-align: left;
+        }
+
+        .certificate-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #28a745;
+        }
+
+        .certificate-item p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        /* contect form css */
+        .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+        display: flex;
+        flex-direction: column;
+        }
+
+        label {
+        margin-top: 10px;
+        color: #555;
+        }
+
+        input,
+        textarea {
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        }
+
+        button {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        }
+
+        button:hover {
+        background-color: #0056b3;
+        }
+
+        table, tr,th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="logos">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-skype"></a>
+    </div>
+
+    <!-- Main Slide Section -->
+    <div class="container-fluid main-slide">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">FULL-STACK WEB DEVELOPER</h1>
+                    <h2 style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Vishnu Nagar</h2>
+                    <h4>I am a full-stack web developer with two years of experience</h4>
+                    <!-- <span style='font-size:500px;'>&#8592;</span> -->
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="profileimage">
+                    <img class="profileimagemini" src="images/profile.png" alt="profile">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="container about" style="margin-top: 10px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>About</h1>
+                <p>
+                    I'm a Web Developer with over 2 years of experience and a focus on Web Development.
+                    Seeking a challenging role in web development to leverage and expand my knowledge, contributing
+                    to both personal and organizational growth.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="container skills">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <h1>TECHNICAL SKILLS</h1>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <table>
+                        <tr>
+                            <th>Skills</th>
+                            <th>Rating</th>
+                            <th>Experience</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">HTML</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                2 Years
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">CSS</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </td>
+                            <td>
+                               2 Years
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">JavaScript</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                2 Years
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">jQuery</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                2 Years
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">Ajax</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                2 Years
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">PHP</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                2 Years
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">MySQL</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                2 Years
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">OOPs</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                2 Years
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">Bootstrap</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                2 Years
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">API Integration</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                2 Years
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">Joomla Framwork</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                2 Years
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">MVC</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                2 Years
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">React.js</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★☆☆☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                "I have no experience, but I have learned this and practice it regularly."
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">Node.js</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★☆☆☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                "I have no experience, but I have learned this and practice it regularly."
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">Express</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★☆☆☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                "I have no experience, but I have learned this and practice it regularly."
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="skill-name">MongoDB</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="skill-item">
+                                    <div class="stars">★★☆☆☆</div>
+                                </div>
+                            </td>
+                            <td>
+                                "I have no experience, but I have learned this and practice it regularly."
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="container projects">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>PROJECTS</h1>
+                <div class="project-item">
+                    <h3>Depoint</h3>
+                    <p><strong>Duration:</strong> 1st Sep 2022 – 17th July 2023</p>
+                    <p><strong>Technologies Used:</strong> HTML, CSS, jQuery, MySQL, Bootstrap, PHP, Joomla-3, Components,
+                        Plugins, Modules, Ajax, XML, JSON, OOP</p>
+                    <p><strong>Outcomes:</strong> I mainly created some component plugins and modules using the above
+                        technologies on this website.</p>
+                </div>
+        
+                <div class="project-item">
+                    <h3>bluevillascollection</h3>
+                    <p><strong>Duration:</strong> 1st Aug 2023 – 20th Dec 2023</p>
+                    <p><strong>Technologies Used:</strong> HTML, CSS, jQuery, MySQL, Bootstrap, PHP, Joomla-3, Components,
+                        Plugins, Modules, Ajax, XML, JSON, OOP</p>
+                    <p><strong>Outcomes:</strong> I mainly created some component plugins and modules using the above
+                        technologies on this website.</p>
+                </div>
+        
+                <div class="project-item">
+                    <h3>Joomla Site Updates</h3>
+                    <p><strong>Outcomes:</strong> Successfully updated many Joomla 2 and 3 sites to the latest versions.</p>
+                </div>
+        
+                <div class="project-item">
+                    <h3>Internship at Hi-Tech, Bhilwara, Rajasthan</h3>
+                    <p>During my internship at Hi-Tech, Bhilwara, Rajasthan, I completed the following tasks:</p>
+                    <ul>
+                        <li>Clone of a website – Created a clone of a website using HTML and CSS.</li>
+                        <li>Form validation - Implemented form validation using JavaScript, HTML, and CSS.</li>
+                        <li>Swap forms, validate, and print input values on submission – Utilized jQuery, HTML, and CSS for
+                            swapping forms, validation, and displaying input values upon submission.</li>
+                        <li>Calculator – Developed a calculator using jQuery, HTML, and CSS.</li>
+                        <li>Create a student profile – Developed a student profile using PHP, Bootstrap, MySQL, and HTML.</li>
+                        <li>Dolibo site – Developed a website using HTML, CSS, jQuery, MySQL, Bootstrap, PHP, Joomla-3,
+                            incorporating Components, Plugins, Modules. Additionally, integrated Ajax, XML, JSON, and OOP. Also,
+                            used the YouTube API in this project.</li>
+                    </ul>
+                </div>
+        
+                <div class="project-item">
+                    <h3>Online Car Rental System</h3>
+                    <p><strong>Duration:</strong> 2 months</p>
+                    <p><strong>Technologies Used:</strong> HTML, CSS, jQuery, Bootstrap</p>
+                    <p><strong>Outcomes:</strong> On this website, users have the opportunity to browse through a variety of
+                        cars and easily rent the one that suits their preferences and needs...</p>
+                </div>
+        
+                <div class="project-item">
+                    <h3>Other Projects</h3>
+                    <p>I have created several practice projects, including a gym management site in Joomla...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificates Section -->
+    <div class="container certificates">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>CERTIFICATES</h1>
+                <div class="certificate-list d-flex">
+                    <div class="certificate-item">
+                        <h3>Hackathon 3.0</h3>
+                        <p>Participated in a 15-day program focused on technical skills.</p>
+                        <a href="" target="_blank">Certificate</a>
+                    </div>
+        
+                    <div class="certificate-item">
+                        <h3>In-House Winter Training Program</h3>
+                        <p>Completed a two-week program organized by the college to enhance technical skills.</p>
+                        <a href="" target="_blank">Certificate</a>
+                    </div>
+        
+                    <div class="certificate-item">
+                        <h3>In-House Summer Training Program</h3>
+                        <p>Successfully completed a 45-day program aimed at improving technical skills.</p>
+                        <a href="" target="_blank">Certificate</a>
+                    </div>
+        
+                    <div class="certificate-item">
+                        <h3>Udemy Android Development Course</h3>
+                        <p>Completed a 32.5-hour course in Android Development.</p>
+                        <a href="" target="_blank">Certificate</a>
+                    </div>
+        
+                    <div class="certificate-item">
+                        <h3>Internshala Python Programming Program</h3>
+                        <p>Completed a six-week program in Python Programming.</p>
+                        <a href="" target="_blank">Certificate</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <form id="contactForm">
+          <h2>Contact Me</h2>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+    
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
