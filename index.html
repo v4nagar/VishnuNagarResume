@@ -159,7 +159,7 @@
             margin-bottom: 10px;
         }
 
-        /* Certificates Section Styles */
+        /* Certificate Section Styles */
         .certificates {
             background-color: #f0f0f0;
             padding: 40px 20px;
@@ -185,7 +185,8 @@
             border-radius: 8px;
             margin: 10px;
             padding: 20px;
-            width: calc(33.33% - 20px);
+            /* width: calc(33.33% - 20px); */
+            width: 30%;
             text-align: left;
         }
 
@@ -243,6 +244,14 @@
 
         table, tr,th,td{
             border: 1px solid black;
+        }
+        @media only screen and (max-width: 767px) {
+            .certificate-item {
+                width: 100%;
+            }
+            table{
+                margin: 5px;
+            }
         }
     </style>
 </head>
@@ -616,7 +625,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1>CERTIFICATES</h1>
-                <div class="certificate-list d-flex">
+                <div class="certificate-list">
                     <div class="certificate-item">
                         <h3>Hackathon 3.0</h3>
                         <p>Participated in a 15-day program focused on technical skills.</p>
