@@ -12,6 +12,8 @@
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
+            /* background: linear-gradient(45deg, #4890c0, #bba7ae73, #cdcdcdb8); */
+            /* background-color: #555; */
             margin: 0;
             padding: 0;
         }
@@ -45,7 +47,8 @@
         /* Main Slide Styles */
         .main-slide {
             min-height: 80vh;
-            background: linear-gradient(45deg, #4890c0, #e52e71, #00aaff);
+            /* background: linear-gradient(45deg, #4890c0, #e52e71, #00aaff); */
+            background: linear-gradient(45deg, #4890c0, #bba7ae73, #cdcdcdb8);
             color: #fff;
             padding: 20px;
         }
@@ -277,14 +280,29 @@
       font-size: 20px;
     }
 
-    .certificate-item img {
-    transition: width 0.5s ease;
-}
+        .certificate-item img {
+        transition: width 0.5s ease;
+    }
 
-.certificate-item img:hover {
-    width: 30%;
-    cursor: pointer;
-}
+    /* .certificate-item img:hover {
+        width: 30%;
+        cursor: pointer;
+    }
+
+    .walking-text-container {
+      position: absolute;
+      white-space: nowrap;
+      animation: walk 60s linear infinite;
+    }
+
+    @keyframes walk {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    } */
 
     @media only screen and (max-width: 767px) {
         .certificate-item {
@@ -317,6 +335,10 @@
                     <h2 style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Vishnu Nagar</h2>
                     <h4>I am a full-stack web developer with two years of experience</h4>
                     <!-- <span style='font-size:500px;'>&#8592;</span> -->
+                    <div class="walking-text-container">
+                        <p>"Web development is not just about writing code; it's about creating experiences, solving problems, and bringing ideas to life in the digital world. Embrace the challenge, innovate with passion, and let your code tell a story of seamless functionality and elegant design."</p>
+                    </div>
+                    <!-- <p>"Web development is not just about writing code; it's about creating experiences, solving problems, and bringing ideas to life in the digital world. Embrace the challenge, innovate with passion, and let your code tell a story of seamless functionality and elegant design."</p> -->
                 </div>
             </div>
             <div class="col-md-6 d-flex justify-content-center align-items-center">
@@ -670,31 +692,31 @@
                     <div class="certificate-item">
                         <h3>Hackathon 3.0</h3>
                         <p>Participated in a 15-day program focused on technical skills.</p>
-                            <img src="hackthon.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))">
+                            <img src="hackthon.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))"> ← Certificate
                     </div>
         
                     <div class="certificate-item">
                         <h3>In-House Winter Training Program</h3>
                         <p>Completed a two-week program organized by the college to enhance technical skills.</p>
-                            <img src="15days.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))">
+                            <img src="15days.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))"> ← Certificate
                     </div>
         
                     <div class="certificate-item">
                         <h3>In-House Summer Training Program</h3>
                         <p>Successfully completed a 45-day program aimed at improving technical skills.</p>
-                            <img src="45days.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))">
+                            <img src="45days.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))"> ← Certificate
                     </div>
         
                     <div class="certificate-item">
                         <h3>Udemy Android Development Course</h3>
                         <p>Completed a 32.5-hour course in Android Development.</p>
-                            <img src="udemy.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))">
+                            <img src="udemy.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))"> ← Certificate
                     </div>
         
                     <div class="certificate-item">
                         <h3>Internshala Python Programming Program</h3>
                         <p>Completed a six-week program in Python Programming.</p>
-                            <img src="internshala.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))">
+                            <img src="internshala.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))"> ← Certificate
                     </div>
             </div>
         </div>
