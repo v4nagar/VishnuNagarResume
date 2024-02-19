@@ -245,26 +245,67 @@
         table, tr,th,td{
             border: 1px solid black;
         }
-        @media only screen and (max-width: 767px) {
-            .certificate-item {
-                width: 100%;
-            }
-            table{
-                margin: 5px;
-            }
+
+        #image-popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+
+    #popup-content {
+      text-align: center;
+    }
+
+    #popup-content img {
+      max-width: 60%;
+      max-height: 60%;
+      border-radius: 8px;
+    }
+
+    #close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .certificate-item img {
+    transition: width 0.5s ease;
+}
+
+.certificate-item img:hover {
+    width: 30%;
+    cursor: pointer;
+}
+
+    @media only screen and (max-width: 767px) {
+        .certificate-item {
+            width: 100%;
         }
+        table{
+            margin: 5px;
+        }
+    }
+    
     </style>
 </head>
 
 <body>
     <!-- Header Section -->
     <div class="logos">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-linkedin"></a>
-        <a href="#" class="fa fa-youtube"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-skype"></a>
+        <a href="https://www.facebook.com/vishnu.nagar.14224" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://x.com/v4nagar?t=De0PBtbrbYo3jyC6ObAOFA&s=03" target="_blank" class="fa fa-twitter"></a>
+        <a href="www.linkedin.com/in/vishnu-nagar-09bbb3167" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/mernwithnagar/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://join.skype.com/invite/uBlj9EShzTtF" target="_blank" class="fa fa-skype"></a>
     </div>
 
     <!-- Main Slide Section -->
@@ -629,35 +670,43 @@
                     <div class="certificate-item">
                         <h3>Hackathon 3.0</h3>
                         <p>Participated in a 15-day program focused on technical skills.</p>
-                        <a href="" target="_blank">Certificate</a>
+                            <img src="hackthon.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))">
                     </div>
         
                     <div class="certificate-item">
                         <h3>In-House Winter Training Program</h3>
                         <p>Completed a two-week program organized by the college to enhance technical skills.</p>
-                        <a href="" target="_blank">Certificate</a>
+                            <img src="15days.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))">
                     </div>
         
                     <div class="certificate-item">
                         <h3>In-House Summer Training Program</h3>
                         <p>Successfully completed a 45-day program aimed at improving technical skills.</p>
-                        <a href="" target="_blank">Certificate</a>
+                            <img src="45days.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))">
                     </div>
         
                     <div class="certificate-item">
                         <h3>Udemy Android Development Course</h3>
                         <p>Completed a 32.5-hour course in Android Development.</p>
-                        <a href="" target="_blank">Certificate</a>
+                            <img src="udemy.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))">
                     </div>
         
                     <div class="certificate-item">
                         <h3>Internshala Python Programming Program</h3>
                         <p>Completed a six-week program in Python Programming.</p>
-                        <a href="" target="_blank">Certificate</a>
+                            <img src="internshala.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))">
                     </div>
             </div>
         </div>
     </div>
+
+  <!-- Image Popup -->
+  <div id="image-popup">
+    <div id="popup-content">
+      <span id="close-btn" onclick="closePopup()">&times;</span>
+      <img id="popup-image" src="" alt="Popup Image">
+    </div>
+  </div>
 
     <div class="container">
         <form id="contactForm">
@@ -676,6 +725,16 @@
       </div>
 
     <!-- Scripts -->
+    <script>
+        function showPopup(imageSrc) {
+          document.getElementById('popup-image').src = imageSrc;
+          document.getElementById('image-popup').style.display = 'flex';
+        }
+    
+        function closePopup() {
+          document.getElementById('image-popup').style.display = 'none';
+        }
+      </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
