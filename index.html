@@ -73,6 +73,7 @@
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(0, 0, 0, 0.3);
             border-radius: 50%;
             width: 100%;
+            /* height: 250px; */
         }
 
         /* About Section Styles */
@@ -208,84 +209,90 @@
 
         /* contect form css */
         .container {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         form {
-        display: flex;
-        flex-direction: column;
+            display: flex;
+            flex-direction: column;
         }
 
         label {
-        margin-top: 10px;
-        color: #555;
+            margin-top: 10px;
+            color: #555;
         }
 
         input,
         textarea {
-        padding: 10px;
-        margin: 5px 0;
-        border: 1px solid #ccc;
-        border-radius: 4px;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
 
         button {
-        background-color: #007BFF;
-        color: #fff;
-        padding: 10px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 16px;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
         }
 
         button:hover {
-        background-color: #0056b3;
+            background-color: #0056b3;
         }
 
-        table, tr,th,td{
+        table,
+        tr,
+        th,
+        td {
             border: 1px solid black;
         }
 
         #image-popup {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      justify-content: center;
-      align-items: center;
-    }
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
 
-    #popup-content {
-      text-align: center;
-    }
+        #popup-content {
+            text-align: center;
+        }
 
-    #popup-content img {
-      max-width: 60%;
-      max-height: 60%;
-      border-radius: 8px;
-    }
+        #popup-content img {
+            max-width: 60%;
+            max-height: 60%;
+            border-radius: 8px;
+        }
 
-    #close-btn {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      cursor: pointer;
-      color: #fff;
-      font-size: 20px;
-    }
+        #close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 20px;
+        }
 
         .certificate-item img {
-        transition: width 0.5s ease;
-    }
+            transition: width 0.5s ease;
+        }
 
-    /* .certificate-item img:hover {
+        .certificate-item img:hover{
+            cursor: pointer;
+        }
+        /* .certificate-item img:hover {
         width: 30%;
         cursor: pointer;
     }
@@ -305,15 +312,15 @@
       }
     } */
 
-    @media only screen and (max-width: 767px) {
-        .certificate-item {
-            width: 100%;
+        @media only screen and (max-width: 767px) {
+            .certificate-item {
+                width: 100%;
+            }
+
+            table {
+                margin: 5px;
+            }
         }
-        table{
-            margin: 5px;
-        }
-    }
-    
     </style>
 </head>
 
@@ -337,14 +344,17 @@
                     <h4>I am a full-stack web developer with two years of experience</h4>
                     <!-- <span style='font-size:500px;'>&#8592;</span> -->
                     <div class="walking-text-container">
-                        <p>"Web development is not just about writing code; it's about creating experiences, solving problems, and bringing ideas to life in the digital world. Embrace the challenge, innovate with passion, and let your code tell a story of seamless functionality and elegant design."</p>
+                        <p>"Web development is not just about writing code; it's about creating experiences, solving
+                            problems, and bringing ideas to life in the digital world. Embrace the challenge, innovate
+                            with passion, and let your code tell a story of seamless functionality and elegant design."
+                        </p>
                     </div>
                     <!-- <p>"Web development is not just about writing code; it's about creating experiences, solving problems, and bringing ideas to life in the digital world. Embrace the challenge, innovate with passion, and let your code tell a story of seamless functionality and elegant design."</p> -->
                 </div>
             </div>
             <div class="col-md-6 d-flex justify-content-center align-items-center">
                 <div class="profileimage">
-                    <img class="profileimagemini" src="profile.png" alt="profile">
+                    <img class="profileimagemini" src="profile.jpg" alt="profile">
                 </div>
             </div>
         </div>
@@ -405,7 +415,7 @@
                                 </div>
                             </td>
                             <td>
-                               2 Years
+                                2 Years
                             </td>
                         </tr>
                         <tr>
@@ -630,53 +640,96 @@
             <div class="col-md-12">
                 <h1>PROJECTS</h1>
                 <div class="project-item">
-                    <a href="https://depoint.ai/"><h3>Depoint</h3></a>
-                    
+                    <a href="https://depoint.ai/">
+                        <h3>Depoint</h3>
+                    </a>
+
                     <p><strong>Duration:</strong> 1st Sep 2022 – 17th July 2023</p>
-                    <p><strong>Technologies Used:</strong> HTML, CSS, jQuery, MySQL, Bootstrap, PHP, Joomla-3, Components,
+                    <p><strong>Technologies Used:</strong> HTML, CSS, jQuery, MySQL, Bootstrap, PHP, Joomla-3,
+                        Components,
                         Plugins, Modules, Ajax, XML, JSON, OOP</p>
                     <p><strong>Outcomes:</strong> I mainly created some component plugins and modules using the above
                         technologies on this website.</p>
                 </div>
-        
+
                 <div class="project-item">
-                    <a href="http://waslix.com/"><h3>Waslix</h3></a>
+                    <a href="http://waslix.com/">
+                        <h3>Waslix</h3>
+                    </a>
                     <p><strong>Duration:</strong> 1st Aug 2023 – 20th Dec 2023</p>
-                    <p><strong>Technologies Used:</strong> HTML, CSS, jQuery, MySQL, Bootstrap, PHP, Joomla-3, Components,
+                    <p><strong>Technologies Used:</strong> HTML, CSS, jQuery, MySQL, Bootstrap, PHP, Joomla-3,
+                        Components,
                         Plugins, Modules, Ajax, XML, JSON, OOP</p>
                     <p><strong>Outcomes:</strong> I mainly created some component plugins and modules using the above
                         technologies on this website.</p>
                 </div>
-        
+
+                <div class="project-item">
+                    <a href="https://sshora-associates.com/">
+                        <h3>sshora-associates.com</h3>
+                    </a>
+
+                    <p><strong>Technologies Used:</strong> MERN (MongoDB, Express, React JS, Node.js)</p>
+                    <p><strong>Outcomes:</strong> Basically this was a WordPress website of a client, and they wanted
+                        the website to be developed in React JS. So, I rebuilt the entire website using the MERN stack.
+                    </p>
+                </div>
+
+                <div class="project-item">
+                    <h3>E-Commerce Dashboard</h3>
+
+                    <p><strong>Technologies Used:</strong> MERN (MongoDB, Express, React JS, Node.js)</p>
+                    <p><strong>Outcomes:</strong> Essentially, I developed this project for practice, and it turned out
+                        to be an awesome learning experience. In this project, I implemented features such as adding
+                        listings from the backend, which would then display on the frontend, along with various other
+                        functionalities.</p>
+                </div>
+
+                <div class="project-item">
+                    <a href="https://pradeepsharmalawfirm.com/">
+                        <h3>pradeepsharmalawfirm.com</h3>
+                    </a>
+
+                    <p><strong>Technologies Used:</strong> Joomla 5</p>
+                    <p><strong>Outcomes:</strong> This was a lawyer's website, and the client requested it to be
+                        developed in PHP. Consequently, I built this website using Joomla 5.</p>
+                </div>
+
+
                 <div class="project-item">
                     <h3>Joomla Site Updates</h3>
-                    <p><strong>Outcomes:</strong> Successfully updated many Joomla 2 and 3 sites to the latest versions.</p>
+                    <p><strong>Outcomes:</strong> Successfully updated many Joomla 2 and 3 sites to the latest versions.
+                    </p>
                 </div>
-        
+
                 <div class="project-item">
                     <h3>Internship at Hi-Tech, Bhilwara, Rajasthan</h3>
                     <p>During my internship at Hi-Tech, Bhilwara, Rajasthan, I completed the following tasks:</p>
                     <ul>
                         <li>Clone of a website – Created a clone of a website using HTML and CSS.</li>
                         <li>Form validation - Implemented form validation using JavaScript, HTML, and CSS.</li>
-                        <li>Swap forms, validate, and print input values on submission – Utilized jQuery, HTML, and CSS for
+                        <li>Swap forms, validate, and print input values on submission – Utilized jQuery, HTML, and CSS
+                            for
                             swapping forms, validation, and displaying input values upon submission.</li>
                         <li>Calculator – Developed a calculator using jQuery, HTML, and CSS.</li>
-                        <li>Create a student profile – Developed a student profile using PHP, Bootstrap, MySQL, and HTML.</li>
+                        <li>Create a student profile – Developed a student profile using PHP, Bootstrap, MySQL, and
+                            HTML.</li>
                         <li>Dolibo site – Developed a website using HTML, CSS, jQuery, MySQL, Bootstrap, PHP, Joomla-3,
-                            incorporating Components, Plugins, Modules. Additionally, integrated Ajax, XML, JSON, and OOP. Also,
+                            incorporating Components, Plugins, Modules. Additionally, integrated Ajax, XML, JSON, and
+                            OOP. Also,
                             used the YouTube API in this project.</li>
                     </ul>
                 </div>
-        
+
                 <div class="project-item">
                     <h3>Online Car Rental System</h3>
                     <p><strong>Duration:</strong> 2 months</p>
                     <p><strong>Technologies Used:</strong> HTML, CSS, jQuery, Bootstrap</p>
-                    <p><strong>Outcomes:</strong> On this website, users have the opportunity to browse through a variety of
+                    <p><strong>Outcomes:</strong> On this website, users have the opportunity to browse through a
+                        variety of
                         cars and easily rent the one that suits their preferences and needs...</p>
                 </div>
-        
+
                 <div class="project-item">
                     <h3>Other Projects</h3>
                     <p>I have created several practice projects, including a gym management site in Joomla...</p>
@@ -694,74 +747,79 @@
                     <div class="certificate-item">
                         <h3>Hackathon 3.0</h3>
                         <p>Participated in a 15-day program focused on technical skills.</p>
-                            <img src="hackthon.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))"> ← Certificate
+                        <img src="hackthon.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))">
+                        ← Certificate
                     </div>
-        
+
                     <div class="certificate-item">
                         <h3>In-House Winter Training Program</h3>
                         <p>Completed a two-week program organized by the college to enhance technical skills.</p>
-                            <img src="15days.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))"> ← Certificate
+                        <img src="15days.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))"> ←
+                        Certificate
                     </div>
-        
+
                     <div class="certificate-item">
                         <h3>In-House Summer Training Program</h3>
                         <p>Successfully completed a 45-day program aimed at improving technical skills.</p>
-                            <img src="45days.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))"> ← Certificate
+                        <img src="45days.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))"> ←
+                        Certificate
                     </div>
-        
+
                     <div class="certificate-item">
                         <h3>Udemy Android Development Course</h3>
                         <p>Completed a 32.5-hour course in Android Development.</p>
-                            <img src="udemy.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))"> ← Certificate
+                        <img src="udemy.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))"> ←
+                        Certificate
                     </div>
-        
+
                     <div class="certificate-item">
                         <h3>Internshala Python Programming Program</h3>
                         <p>Completed a six-week program in Python Programming.</p>
-                            <img src="internshala.jpg" alt="Image 1" width="20%" onclick="showPopup(this.getAttribute('src'))"> ← Certificate
+                        <img src="internshala.jpg" alt="Image 1" width="20%"
+                            onclick="showPopup(this.getAttribute('src'))"> ← Certificate
                     </div>
+                </div>
             </div>
         </div>
-    </div>
 
-  <!-- Image Popup -->
-  <div id="image-popup">
-    <div id="popup-content">
-      <span id="close-btn" onclick="closePopup()">&times;</span>
-      <img id="popup-image" src="" alt="Popup Image">
-    </div>
-  </div>
+        <!-- Image Popup -->
+        <div id="image-popup">
+            <div id="popup-content">
+                <span id="close-btn" onclick="closePopup()">&times;</span>
+                <img id="popup-image" src="" alt="Popup Image">
+            </div>
+        </div>
 
-    <div class="container">
-        <form id="contactForm">
-          <h2>Contact Me</h2>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-    
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-    
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-    
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+        <div class="container">
+            <form id="contactForm">
+                <h2>Contact Me</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-    <!-- Scripts -->
-    <script>
-        function showPopup(imageSrc) {
-          document.getElementById('popup-image').src = imageSrc;
-          document.getElementById('image-popup').style.display = 'flex';
-        }
-    
-        function closePopup() {
-          document.getElementById('image-popup').style.display = 'none';
-        }
-      </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Scripts -->
+        <script>
+            function showPopup(imageSrc) {
+                document.getElementById('popup-image').src = imageSrc;
+                document.getElementById('image-popup').style.display = 'flex';
+            }
+
+            function closePopup() {
+                document.getElementById('image-popup').style.display = 'none';
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
